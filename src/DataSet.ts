@@ -1,4 +1,6 @@
-import _ from 'lodash';
+import getPropery from 'lodash.get';
+import isFunction from 'lodash.isFunction';
+import isNaN from 'lodash.isNaN';
 
 /////////////////////////////////////////////////
 export type SourceDefinition = {
@@ -140,7 +142,7 @@ function getPropertyValue(node: any, descriptor: AttributeValueDescriptor): Valu
 
   let result = undefined;
   const [property, type, length, scale, handler, args] = descriptValue(descriptor);
-  const value = _.get(node, property);
+  const value = getPropery(node, property);
   if(handler) {
     result = defineValue(handler(value, ...args), type, length, scale);
   } else if(property === '*') {
@@ -159,7 +161,7 @@ function descriptValue(descriptor: AttributeValueDescriptor):
       [T extends number ? number : AttributeType, Function|undefined] {
 
     let handler: Function;
-    if(_.isFunction(param)) {
+    if(isFunction(param)) {
       handler = param;
       param   = defaultValue || 0;
     } else {
@@ -192,7 +194,7 @@ function descriptValue(descriptor: AttributeValueDescriptor):
   }
   if(descriptor.length > 4) {
     let argIndex = 4;
-    if(!_.isFunction(handler)) {
+    if(!isFunction(handler)) {
       handler = descriptor[4];
       argIndex++;
     }
@@ -231,7 +233,7 @@ export function getNumberValue(input: ValueType, length?: number, scale: number 
     input = input.replace(/\,/g, '.')
   }
   let result = Number(input);
-  if(_.isNaN(result)) {
+  if(isNaN(result)) {
     return 0;
   }
   input = result.toString();

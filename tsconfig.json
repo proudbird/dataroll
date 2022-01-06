@@ -1,0 +1,22 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "target": "ES2020",
+      "noImplicitAny": false,
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "sourceMap": true,
+      "rootDir": "./src", 
+      "outDir": "./build/",
+      "baseUrl": ".",
+      "paths": {
+          "*": [
+              "."
+          ]
+      }
+  },
+  "include":["src/**/*.ts","src/**/*.json"],
+  "exclude": ["node_modules", "src/test", "tsconfig.json"]
+}

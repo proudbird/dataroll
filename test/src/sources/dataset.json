@@ -1,0 +1,52 @@
+[
+  {
+    "id": "88564ba5-0194-58ff-8fd2-a7b46e1b670e",
+    "createdAt": "2021-07-14T17:00:18Z",
+    "updatedAt": "2021-09-22T14:25:51Z",
+    "properties": [{
+        "type": "Category",
+        "value": "Computers"
+      }, {
+        "type": "Brand",
+        "value": "IBM"
+      }
+    ],
+    "sku": [{
+        "id": "7902975e-81b5-469e-806d-364b55ca7f5c",
+        "code": "1/01",
+        "barcodes": ["comp-01"],
+        "prices": {
+          "retail": 999.99,
+          "wholesale": 899.99
+        }
+      }, {
+        "id": "7902975e-81b5-469e-806d-364b55ca7f5c",
+        "code": "1/02",
+        "barcodes": ["comp-1/02/1", "comp-1/02/2"]
+      }
+    ]
+  },
+  {
+    "id": "db58c35c-d554-41d7-8ae3-590cce87d355",
+    "createdAt": "2021-07-14T17:00:18Z",
+    "updatedAt": "2021-09-22T14:25:51Z",
+    "properties": [{
+        "type": "Category",
+        "value": "Computers"
+      }, {
+        "type": "Brand",
+        "value": "Lenovo"
+      }
+    ],
+    "sku": [{
+        "id": "d25c6774-6ed4-4829-9c3b-fe57f565c655",
+        "code": "2/01",
+        "barcodes": ["comp-02"]
+      }, {
+        "id": "1885f785-0e02-491d-a31a-3dcabeddfc68",
+        "code": "2/02",
+        "barcodes": ["comp-2/02/1", "comp-2/02/2", "comp-2/02/3"]
+      }
+    ]
+  }
+]
