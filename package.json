@@ -2,7 +2,7 @@
   "name": "x-data-source",
   "version": "0.0.1",
   "description": "A very usefull tool for converting complex nested sets of data to a plain array",
-  "main": "build/index.js",
+  "main": "build/dataSource.js",
   "scripts": {
     "build": "tsc --build tsconfig.json",
     "build_test": "tsc --build test/tsconfig.json",
