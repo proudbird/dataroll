@@ -22,9 +22,9 @@ export default function() {
     checkStrings('should stay', 1, 3);
     checkStrings('should be transformed to', 2, 3);
     checkStrings('should stay', 3, 0);
-    checkStrings('should be transformed to', 4);
-    checkStrings('should be transformed to', 5);
-    checkStrings('should be transformed to', 6);
+    checkStrings('should to be interpreted as', 4);
+    checkStrings('should to be interpreted as', 5);
+    checkStrings('should to be interpreted as', 6);
     checkStrings('should be transformed to', 7);
     checkStrings('should be transformed to', 8);
     checkStrings('should be transformed to', 9);

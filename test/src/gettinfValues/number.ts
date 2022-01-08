@@ -24,16 +24,16 @@ export default function() {
     checkNumber('should be transformed to', 3, 5, 0);
     checkNumber('should be transformed to', 4, 3, 0);
     checkNumber('should stay', 5, 3, 0);
-    checkNumber('should be transformed to', 6, 3, 0);
-    checkNumber('should be transformed to', 7, 3, 0);
-    checkNumber('should be transformed to', 8, 3, 0);
-    checkNumber('should be transformed to', 9, 3, 0);
-    checkNumber('should be transformed to', 10, 4, 2);
-    checkNumber('should be transformed to', 11, 4, 0);
-    checkNumber('should be transformed to', 12);
+    checkNumber('should to be interpreted as', 6, 3, 0);
+    checkNumber('should to be interpreted as', 7, 3, 0);
+    checkNumber('should to be interpreted as', 8, 3, 0);
+    checkNumber('should to be interpreted as', 9, 3, 0);
+    checkNumber('should to be converted to number', 10, 4, 2);
+    checkNumber('should to be converted to number', 11, 4, 0);
+    checkNumber('should to be interpreted as', 12);
     checkNumber('should be transformed to', 13, 2);
-    checkNumber('should be transformed to', 14);
-    checkNumber('should be transformed to', 15);
+    checkNumber('hould to be interpreted as', 14);
+    checkNumber('hould to be interpreted as', 15);
     checkNumber('should be transformed to', 16);
   });
 }
