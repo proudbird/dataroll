@@ -112,7 +112,7 @@ const valueTypeMap: { [K in AttributeType]?: Function } = {
   'D': getDateValue
 }
 
-export function defineValue(input: any, type: AttributeType, length: number = 0, scale: number = 0) {
+export function defineValue(input: any, type: AttributeType, length: number|undefined, scale: number = 0) {
 
   const handler = valueTypeMap[type];
   if(!handler) {

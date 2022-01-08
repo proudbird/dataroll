@@ -7,14 +7,10 @@ export default function getDateValue(input: ValueType): Date {
   if(!input || typeof input === 'number') {
     return null
   }
-  try {
-    const d = moment(input as string);
-    if(d.isValid()) {
-      result = d.toDate();
-    }
-  } catch (error) {
-    //TODO: should we throw an error?
-    return null
+
+  const d = moment(input as string);
+  if(d.isValid()) {
+    result = d.toDate();
   }
 
   return result;

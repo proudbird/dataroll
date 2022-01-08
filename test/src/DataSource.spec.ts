@@ -1,4 +1,4 @@
-import gettingValues from './gettinfValues/gettingValues';
+import gettingValues from './gettingValues/gettingValues';
 
 describe('xDataSource testings', () => {
   gettingValues();

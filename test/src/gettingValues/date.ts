@@ -1,8 +1,9 @@
 import moment from 'moment';
 import { expect } from 'chai';
 import title from '../title';
-import getDateValue from '../../../build/valueGeters/date';
+import { defineValue } from '../../../build/helpers/defineEntry';
 
+const type = 'D';
 const etalon = new Date();
 const input = moment(etalon);
 
@@ -13,7 +14,7 @@ const values = {
 
 function checkValue(text: string, index: number, length?: number, scale?: number): void {
   it(title(values, index, text), () => {
-    const output = getDateValue(values.inputs[index], length, scale);
+    const output = defineValue(values.inputs[index], type, length, scale);
     const etalon = values.etalons[index];
     expect(output).to.eql(etalon);
   });

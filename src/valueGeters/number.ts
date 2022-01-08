@@ -1,6 +1,6 @@
 import { ValueType } from "../types";
 
-export default function getNumberValue(input: ValueType, length?: number, scale: number = 0): number {
+export default function getNumberValue(input: ValueType, length?: number|undefined, scale: number = 0): number {
   
   if(length === 0) {
     throw new Error(`Length of a number value can't be 0`);
