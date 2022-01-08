@@ -5,7 +5,9 @@
   "main": "build/dataSource.js",
   "scripts": {
     "build": "tsc --build tsconfig.json",
+    "watch": "tsc --build tsconfig.json -w",
     "build_test": "tsc --build test/tsconfig.json",
+    "watch_test": "tsc --build test/tsconfig.json -w",
     "test": "mocha test/build/**/*.spec.js"
   },
   "repository": {
@@ -24,7 +26,7 @@
   "dependencies": {
     "lodash.get": "^4.4.2",
     "lodash.isfunction": "^3.0.9",
-    "lodash.isnan": "^3.0.2"
+    "moment": "^2.29.1"
   },
   "devDependencies": {
     "@types/chai": "^4.3.0",
@@ -34,6 +36,7 @@
     "@types/mocha": "^9.0.0",
     "chai": "^4.3.4",
     "mocha": "^9.1.3",
+    "nyc": "^15.1.0",
     "typescript": "^4.5.4"
   }
 }

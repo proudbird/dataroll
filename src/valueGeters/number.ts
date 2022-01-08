@@ -9,7 +9,7 @@ export default function getNumberValue(input: ValueType, length?: number, scale:
     input = input.replace(/\,/g, '.')
   }
   let result = Number(input);
-  if(isNaN(result)) {
+  if(Number.isNaN(result)) {
     return 0;
   }
   input = result.toString();
