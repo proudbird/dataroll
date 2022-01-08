@@ -1,4 +1,3 @@
-
 import DataSource from "../dataSource";
 
 export default function populate(DataSource: DataSource, entries: any[]): void {
