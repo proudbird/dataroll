@@ -1,8 +1,8 @@
-import getPropery from 'lodash.get';
+import getProperty from 'lodash.get';
 import isFunction from 'lodash.isFunction';
 import getStringValue from '../valueGeters/string';
 
-import { AttributeType, AttributeValueDescriptor, ValueType } from "../types";
+import { AttributeType, AttributeValueDescriptor, IValueDescriptor, ValueType } from "../types";
 import getNumberValue from '../valueGeters/number';
 import getBooleanValue from '../valueGeters/boolean';
 import getDateValue from '../valueGeters/date';
@@ -12,9 +12,11 @@ export default function defineEntry(state: any, entry: any):  { done: boolean, v
   const current = state[state.root];
   const { done, value } = current.branch.next();
 
-  for(let attribute of current.definition.attributes) {
-    for(let key in attribute) {
-      entry[key] = getPropertyValue(value, attribute[key]);
+  if(value) {
+    for(let attribute of current.definition.attributes) {
+      for(let key in attribute) {
+        entry[key] = getPropertyValue(value, attribute[key]);
+      }
     }
   }
 
@@ -42,8 +44,8 @@ export default function defineEntry(state: any, entry: any):  { done: boolean, v
 export function getPropertyValue(node: any, descriptor: AttributeValueDescriptor): ValueType {
 
   let result = undefined;
-  const [property, type, length, scale, handler, args] = descriptValue(descriptor);
-  const value = getPropery(node, property);
+  const { property, type, length, scale, handler, args } = descriptValue(descriptor);
+  const value = getProperty(node, property);
   if(handler) {
     result = defineValue(handler(value, ...args), type, length, scale);
   } else if(property === '*') {
@@ -55,54 +57,74 @@ export function getPropertyValue(node: any, descriptor: AttributeValueDescriptor
   return result;
 }
 
-export function descriptValue(descriptor: AttributeValueDescriptor):
-    [string, AttributeType, number, number, Function, any[]] {
+export function descriptValue(descriptor: AttributeValueDescriptor): IValueDescriptor {
+
+  if(!Array.isArray(descriptor) || !descriptor.length) {
+    throw new Error(`Descriptor has to be an array of params`);
+  }
+  
+  if(typeof descriptor[0] !== 'string') {
+    throw new Error(`First parameter of descriptor must be a string`);
+  }
 
   function changeIfFunction<T extends number|AttributeType>(param: any, defaultValue: T): 
-      [T extends number ? number : AttributeType, Function|undefined] {
+      [T extends number ? number : AttributeType, Function|undefined, boolean] {
 
     let handler: Function;
+    let switched = false;
     if(isFunction(param)) {
       handler = param;
       param   = defaultValue || 0;
+      switched = true;
     } else {
       param = param || defaultValue;
     }
 
-    return [param, handler];
+    return [param, handler, switched];
   }
 
   let property = descriptor[0];
-  let type     : AttributeType;
-  let length   : number;
-  let scale    : number;
+  let type     : AttributeType|undefined;
+  let length   : number = -1;
+  let scale    : number = -1;
   let handler  : Function;
   let args     : any[] = [];
+  let switched : boolean;
 
-  if(descriptor.length > 1) {
-    type = descriptor[1];
-    [type, handler] = changeIfFunction(type, 'S');
+  if(descriptor.length > 1) { 
+    type = descriptor[1] as AttributeType;
+    [type, handler, switched] = changeIfFunction(type, 'U');
+    args = descriptor.slice(2) || args;
   }
-  if(descriptor.length > 2) {
-    length = descriptor[2];
-    [length, handler] = changeIfFunction(length, 0);
-    args = descriptor.slice(3) || args;
-  }
-  if(descriptor.length > 3) {
-    scale = descriptor[3];
-    [scale, handler] = changeIfFunction(scale, 0);
-    args = descriptor.slice(4) || args;
-  }
-  if(descriptor.length > 4) {
-    let argIndex = 4;
-    if(!isFunction(handler)) {
-      handler = descriptor[4];
-      argIndex++;
+  if(!switched) {
+    if(descriptor.length > 2) {
+      length = descriptor[2] as number;
+      [length, handler, switched] = changeIfFunction(length, -1);
+      if(typeof length !== 'number') {
+        throw new Error(`Lenght parameter of the descriptor must be a number`);
+      }
+      args = descriptor.slice(3) || args;
     }
-    args = descriptor.slice(argIndex) || args;
+    if(!switched) {
+      if(descriptor.length > 3) {
+        scale = descriptor[3] as number;
+        [scale, handler, switched] = changeIfFunction(scale, -1);
+        args = descriptor.slice(4) || args;
+      }
+      if(!switched) {
+        if(descriptor.length > 4) {
+          let argIndex = 4;
+          if(!isFunction(handler)) {
+            handler = descriptor[4];
+            argIndex++;
+          }
+          args = descriptor.slice(argIndex) || args;
+        } 
+      }
+    }
   }
 
-  return [property, type, length, scale, handler, args];
+  return { property, type, length, scale, handler, args };
 }
 
 const valueTypeMap: { [K in AttributeType]?: Function } = {

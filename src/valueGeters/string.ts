@@ -6,7 +6,7 @@ export default function getStringValue(input: ValueType, length?: number): strin
   if(typeof input === 'boolean') {
     result = input.toString();
   }
-  if(length) {
+  if(length > 0) {
     result = result.slice(0, length);
   }
 
