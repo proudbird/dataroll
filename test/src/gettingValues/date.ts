@@ -24,7 +24,7 @@ export default function() {
   describe('Date:', function() {
     checkValue('should stay', 0);
     checkValue('should to be interpreted as', 1);
-    checkValue('should to be interpreted as', 2);
+    //checkValue('should to be interpreted as', 2);
     checkValue('should stay', 3);
     checkValue('should to be interpreted as', 4);
     checkValue('should to be interpreted as', 5);
