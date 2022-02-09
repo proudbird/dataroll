@@ -1,0 +1,67 @@
+/// <reference types="lodash" />
+/// <reference types="moment" />
+
+declare class DataRoll {
+    source: any[];
+    definition: SourceDefinition;
+    validator?: Function;
+    
+    [Symbol.iterator]: () => {};
+    get entries(): any[];
+    get length(): number;
+    get columns(): DataSourceColumnDescriptor[];
+}
+
+declare type SourceDefinition = {
+    attributes: Array<AttributeDefinition>;
+    subset?: SourceDefinition;
+    root?: string;
+};
+declare type AttributeDefinition = {
+    [attributeName: string]: AttributeValueDescriptor;
+};
+
+type numberOrFunction = number | Function;
+type numberOrFunctionOrAny = number | Function | any;
+type FunctionOrAny = Function | any;
+
+declare type AttributeValueDescriptor = [
+    string,
+    AttributeType?,
+    numberOrFunction?,
+    numberOrFunctionOrAny?,
+    FunctionOrAny?,
+    ...[]
+];
+
+declare type IValueDescriptor = {
+    property: string;
+    type: AttributeType;
+    length: number;
+    scale: number;
+    handler: Function;
+    args: any[];
+};
+declare type AttributeType = 'S' | 'N' | 'B' | 'D' | 'U';
+declare type DataType = 'STRING' | 'NUMBER' | 'BOOLEAN' | 'DATE';
+declare type ValueType = string | number | boolean | Date;
+
+declare class DataSourceColumnDescriptor {
+    name: string;
+    length?: number;
+    scale?: number;
+    dataType: DataType;
+    constructor(name: string, type: AttributeType, length?: number, scale?: number);
+}
+
+declare namespace DataRoll {
+
+    interface SourceDefinition {
+        attributes: Array<AttributeDefinition>;
+        subset?: SourceDefinition;
+        root?: string;
+    }
+}
+
+export = DataRoll;
+export as namespace DataRoll;

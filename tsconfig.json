@@ -15,8 +15,9 @@
               "."
           ]
       },
-      "declaration": true
+      "declaration": false,
+      "skipLibCheck": true
   },
-  "include":["src/**/*.ts", "src/**/*.d.ts"],
-  "exclude": ["node_modules", "src/test"] 
+  "include":["src/**/*.ts"],
+  "exclude": ["node_modules", "src/test", "types/index.d.ts"] 
 }

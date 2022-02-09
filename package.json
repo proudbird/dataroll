@@ -10,7 +10,7 @@
     "watch_test": "tsc --build test/tsconfig.json -w",
     "test": "mocha test/build/**/*.spec.js"
   },
-  "types": "./build/",
+  "typings": "./types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/proudbird/dataroll.git"
