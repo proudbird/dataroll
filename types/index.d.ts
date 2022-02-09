@@ -5,6 +5,8 @@ declare class DataRoll {
     source: any[];
     definition: SourceDefinition;
     validator?: Function;
+
+    constructor(source: any[], definition: SourceDefinition, validator?: Function);
     
     [Symbol.iterator]: () => {};
     get entries(): any[];
@@ -31,7 +33,7 @@ declare type AttributeValueDescriptor = [
     numberOrFunction?,
     numberOrFunctionOrAny?,
     FunctionOrAny?,
-    ...[]
+    any?
 ];
 
 declare type IValueDescriptor = {
