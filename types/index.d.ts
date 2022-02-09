@@ -1,7 +1,7 @@
 /// <reference types="lodash" />
 /// <reference types="moment" />
 
-declare class DataRoll {
+declare class Dataroll {
     source: any[];
     definition: SourceDefinition;
     validator?: Function;
@@ -65,5 +65,5 @@ declare namespace DataRoll {
     }
 }
 
-export = DataRoll;
-export as namespace DataRoll;
+export = Dataroll;
+export as namespace Dataroll;
