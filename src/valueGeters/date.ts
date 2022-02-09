@@ -7,7 +7,7 @@ export default function getDateValue(input: ValueType): Date {
   if(!input || typeof input === 'number') {
     return null
   }
-
+//@ts-ignore//@ts-ignore
   const d = moment(input as string);
   if(d.isValid()) {
     result = d.toDate();

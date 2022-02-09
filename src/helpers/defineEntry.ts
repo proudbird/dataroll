@@ -45,6 +45,7 @@ export function getPropertyValue(node: any, descriptor: AttributeValueDescriptor
 
   let result = undefined;
   const { property, type, length, scale, handler, args } = descriptValue(descriptor);
+  //@ts-ignore
   const value = getProperty(node, property);
   if(handler) {
     result = defineValue(handler(value, ...args), type, length, scale);
@@ -72,6 +73,7 @@ export function descriptValue(descriptor: AttributeValueDescriptor): IValueDescr
 
     let handler: Function;
     let switched = false;
+    //@ts-ignore
     if(isFunction(param)) {
       handler = param;
       param   = defaultValue || 0;
@@ -114,6 +116,7 @@ export function descriptValue(descriptor: AttributeValueDescriptor): IValueDescr
       if(!switched) {
         if(descriptor.length > 4) {
           let argIndex = 4;
+          //@ts-ignore
           if(!isFunction(handler)) {
             handler = descriptor[4];
             argIndex++;
