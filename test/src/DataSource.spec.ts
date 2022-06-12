@@ -1,11 +1,11 @@
 import { readFileSync } from 'fs';
 import { join } from 'path';
-import { should, expect } from 'chai';
 import moment from 'moment';
 import gettingValues from './gettingValues/gettingValues';
 import descriptValues from './descriptValues/descriptValues';
-import testDefineEntryFromSingleLevelSource from './defineEntry/testDefineEntryFromSingleLevelSource';
+import testDefineEntryFromSingleLevelSource from './defineEntry/testDefineEntryFromSingleLevelSource.spec';
 import DataRoll from '../../build/dataroll';
+import _ from 'lodash';
 
 describe('xDataSource testings', () => {
   gettingValues();
@@ -127,14 +127,100 @@ const etalons = [{
 ]
 
 describe('Iterating throw all entries of source', () => {
-  it('should iterate throw all entries', () => {
+  test('should iterate throw all entries', () => {
     const sourceFile = readFileSync(join(__dirname, './sources/dataset.json'), 'utf8');
     const source = JSON.parse(sourceFile);
     const ds = new DataRoll(source, definition);
     let index = 0;
     for(let entry of ds) {
-      expect(entry).to.deep.equal(etalons[index]);
+      expect(entry).toEqual(etalons[index]);
       index++;
     }
+    expect(ds.length).toBe(7);
+  })
+});
+
+describe('Getting length of the source', () => {
+  test('should get the length of the source', () => {
+    const sourceFile = readFileSync(join(__dirname, './sources/dataset.json'), 'utf8');
+    const source = JSON.parse(sourceFile);
+    const ds = new DataRoll(source, definition);
+    expect(ds.length).toBe(7);
+  })
+});
+
+
+describe('Getting length of the source', () => {
+  test('should get the length of the source', () => {
+
+    function castDate(value: string, offset: number) {
+      const date = moment(value).add('hours', offset).toDate();
+      return date;
+    }
+  
+    function addin(addIn, type: string): string {
+  
+      const node = _.find(addIn, { type: type});
+      const value = _.get(node, 'params[0].value');
+    
+      return value;
+    }
+    
+    function price(addIn, type: string): string {
+    
+      const node = _.find(addIn, { type: type});
+      const value = _.get(node, 'params[0].count');
+    
+      return value;
+    }
+
+    const definition = {
+      attributes: [
+        { cardId:   ['imtId' , 'N', 10 ] },
+        { object:   ['object', 'S', 100] },
+        { category: ['parent', 'S', 100] },
+        { created:  ['createdAt', 'D', castDate] },
+        { updated:  ['updatedAt', 'D', castDate] },
+        { name:  ['addin', 'S', 255, addin, 'Наименование'] },
+        { brand: ['addin', 'S', 255, addin, 'Бренд'] }
+      ],
+      subset: {
+        root: 'nomenclatures',
+        attributes: [
+          { productId: ['nmId'      , 'S', 10 ] },
+          { vednodSKU: ['vendorCode', 'S', 150] },
+          { color: ['addin', 'S', 100, addin, 'Основной цвет'] },
+          { size: ['addin', 'S', 50, addin, 'Размер'] }
+        ],
+        subset: {
+          root: 'variations',
+          attributes: [
+            { skuId: ['chrtId', 'S', 10 ] },
+            { price: ['addin', 'N', 10, 2, price, 'Розничная цена' ] }
+          ],
+          subset: {
+            root: 'barcodes',
+            attributes: [{ barcode: ['*', 'S', 100 ] }]
+          }
+        }
+      }
+    };
+
+    const lastTimeUpdate = new Date(2021, 6, 5);
+
+    function validator(record: any): boolean {
+
+      let result = false;
+      if(record.updated > lastTimeUpdate) {
+        result = true;
+      }
+  
+      return result;
+    }
+  
+    const sourceFile = readFileSync(join(__dirname, './sources/listing.json'), 'utf8');
+    const source = JSON.parse(sourceFile);
+    const ds = new DataRoll(source.cards, definition, validator);
+    expect(ds.length).toBe(36);
   })
 });

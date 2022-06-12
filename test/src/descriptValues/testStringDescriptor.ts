@@ -1,5 +1,3 @@
-import { should } from 'chai';
-
 import { IValueDescriptor, AttributeValueDescriptor } from '../../../build/types';
 import { descriptValue } from '../../../build/helpers/defineEntry';
 
@@ -67,12 +65,12 @@ export default function() {
     testDescription(values, 'should be transformed to', 6);
     testDescription(values, 'should be transformed to', 7);
 
-    it(`trying to get descriptor without params should throw an error`, () => {;
-      should().throw(descriptValue, `Descriptor has to be an array of params`);
+    test(`trying to get descriptor without params should throw an error`, () => {;
+      expect(descriptValue).toThrow(`Descriptor has to be an array of params`);
     });
 
-    it(`trying to get descriptor without wrong first param type`, () => {;
-      should().throw(() => { descriptValue([123]) }, `First parameter of descriptor must be a string`);
+    test(`trying to get descriptor without wrong first param type`, () => {;
+      expect(() => { descriptValue([123]) }).toThrowError(`First parameter of descriptor must be a string`);
     });
   });
 }

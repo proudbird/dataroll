@@ -1,0 +1,1237 @@
+{
+  "cards": [{
+    "id": "7f450fa5-c5d9-5a1c-a23c-8139545c9871",
+    "imtId": 9634528,
+    "userId": 0,
+    "supplierId": "56b967bc-72d8-42c2-965c-faa7d73aae6e",
+    "imtSupplierId": 0,
+    "object": "Рубашки",
+    "parent": "Одежда",
+    "countryProduction": "Беларусь",
+    "supplierVendorCode": "D51-01/",
+    "addin": [{
+      "type": "Ключевые слова",
+      "params": [{
+        "value": "рубашка женская оверсайз"
+      }, {
+        "value": "рубашка больших размеров"
+      }, {
+        "value": "рубашка из льна женская"
+      }]
+    }, {
+      "type": "Бренд",
+      "params": [{
+        "value": "detalio"
+      }]
+    }, {
+      "type": "Пол",
+      "params": [{
+        "value": "Женский"
+      }]
+    }, {
+      "type": "Наименование",
+      "params": [{
+        "value": "Рубашка"
+      }]
+    }, {
+      "type": "Описание",
+      "params": [{
+        "value": "Льняная рубашка свободного кроя с воротником и нагрудным карманом. Состав рубашки бежевого,молочного цвета (артикул 27605075) - 70% лен,30% хлопок. Длинные рукава, манжеты с отворотами и хлястиками. Застежка на книпки. Внутренние швы - закрытые. Можно носить на две стороны. Длина по спинке: S - 85 см; M - 85 см; L - 86 см; XL - 87 см; XXL - 87 см; XXXL - 87 см. Длина по полочке: S - 78 см; M - 80 см; L - 81 см; XL - 82 см; XXL - 82 см; XXXL - 82 см. Длина рукава: S - 47 см; M - 48 см; L - 49 см; XL - 49 см; XXL - 49 см; XXXL - 49 см. Размеры XL-XXXL имеют встречную складку по спинке и выточки на груди."
+      }]
+    }, {
+      "type": "Тнвэд",
+      "params": [{
+        "value": "6206901000"
+      }]
+    }, {
+      "type": "Состав",
+      "params": [{
+        "value": "лен",
+        "count": 100,
+        "units": "%"
+      }]
+    }, {
+      "type": "Комплектация",
+      "params": [{
+        "value": "рубашка"
+      }]
+    }, {
+      "type": "Вид застежки",
+      "params": [{
+        "value": "кнопки"
+      }]
+    }, {
+      "type": "Тип рукава",
+      "params": [{
+        "value": "3/4"
+      }]
+    }, {
+      "type": "Назначение",
+      "params": [{
+        "value": "повседневная"
+      }]
+    }, {
+      "type": "Рост модели на фото",
+      "params": [{
+        "count": 174,
+        "units": "см"
+      }]
+    }, {
+      "type": "Тип рубашки",
+      "params": [{
+        "value": "повседневная прямая"
+      }]
+    }, {
+      "type": "Размер на модели",
+      "params": [{
+        "value": "44"
+      }]
+    }, {
+      "type": "Фактура материала",
+      "params": [{
+        "value": "плетеный"
+      }]
+    }, {
+      "type": "Тип карманов",
+      "params": [{
+        "value": "накладные"
+      }]
+    }, {
+      "type": "Декоративные элементы",
+      "params": [{
+        "value": "карман"
+      }]
+    }, {
+      "type": "Уход за вещами",
+      "params": [{
+        "value": "барабанная сушка"
+      }]
+    }, {
+      "type": "Возрастная группа (лет)",
+      "params": [{
+        "value": "от 18 до 50 лет"
+      }]
+    }, {
+      "type": "Параметры модели на фото (ОГ-ОТ-ОБ)",
+      "params": [{
+        "value": "90-63-93"
+      }]
+    }],
+    "nomenclatures": [{
+      "id": "d3669483-9c63-4a7a-857a-a6051e18a7be",
+      "nmId": 12844222,
+      "vendorCode": "06",
+      "variations": [{
+        "id": "97ddabe1-5350-4ee8-aede-25ca8a1833fa",
+        "chrtId": 39500074,
+        "barcodes": ["2000349624002"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "L"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "46-48"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 6040
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "7507f2c1-0946-4ca4-b0d2-48fd9cb87cf8",
+        "chrtId": 39500075,
+        "barcodes": ["2000349624026"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "M"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "44-46"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 6040
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "f9bea228-a791-4da0-b2b3-301b3acb6a70",
+        "chrtId": 39500076,
+        "barcodes": ["2000349624040"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "S"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "42-44"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 6040
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "44d5edb9-2616-4082-a248-c2496a991429",
+        "chrtId": 63550899,
+        "barcodes": ["4810624015634"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "XL"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "50-52"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 6040
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "3e3356bd-ae00-4bf7-9696-bdbacd52e654",
+        "chrtId": 63550900,
+        "barcodes": ["4810624016334"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "XXL"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "54-56"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 6040
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "76a2bf07-cca5-4b0c-a32b-bf28c74dfa1b",
+        "chrtId": 63550901,
+        "barcodes": ["4810624016341"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "XXXL"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "58-60"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 6040
+          }]
+        }],
+        "errors": null
+      }],
+      "addin": [{
+        "type": "Коллекция",
+        "params": [{
+          "value": "Базовая коллекция"
+        }]
+      }, {
+        "type": "Основной цвет",
+        "params": [{
+          "value": "темно-серый"
+        }]
+      }, {
+        "type": "Фото",
+        "params": [{
+          "value": "https://img1.wbstatic.net/big/new/12840000/12844222-1.jpg"
+        }, {
+          "value": "https://img1.wbstatic.net/big/new/12840000/12844222-2.jpg"
+        }, {
+          "value": "https://img1.wbstatic.net/big/new/12840000/12844222-3.jpg"
+        }, {
+          "value": "https://img1.wbstatic.net/big/new/12840000/12844222-4.jpg"
+        }, {
+          "value": "https://img1.wbstatic.net/big/new/12840000/12844222-5.jpg"
+        }, {
+          "value": "https://img1.wbstatic.net/big/new/12840000/12844222-6.jpg"
+        }]
+      }],
+      "updatedAt": "0001-01-01T00:00:00Z"
+    }, {
+      "id": "2b62a60a-845d-4d1e-87e7-62dd6671ce61",
+      "nmId": 12844223,
+      "vendorCode": "09",
+      "variations": [{
+        "id": "ae3f07af-6dba-4d1b-a815-b2d84b064170",
+        "chrtId": 39500077,
+        "barcodes": ["2000349624019"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "L"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "46-48"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 7999
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "58d5ce8d-4bae-440b-a6a4-094e80020363",
+        "chrtId": 39500078,
+        "barcodes": ["2000349624057"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "S"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "42-44"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 7999
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "a973e25c-5980-49a6-90f5-9db788f23845",
+        "chrtId": 53536751,
+        "barcodes": ["4810624015566"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "M"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "44-46"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 7999
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "106a71ab-3b13-4071-aaf9-b0ee8710fbc6",
+        "chrtId": 70311215,
+        "barcodes": ["4810624015658"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "XL"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "50-52"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 7999
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "8ed30f8f-0f32-477a-b7a2-d3ce2b032ea2",
+        "chrtId": 70311216,
+        "barcodes": ["4810624016358"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "XXL"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "54-56"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 7999
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "fa216675-55ef-45fe-ad6c-765b3404007f",
+        "chrtId": 70311217,
+        "barcodes": ["4810624016365"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "XXXL"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "58-60"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 7999
+          }]
+        }],
+        "errors": null
+      }],
+      "addin": [{
+        "type": "Коллекция",
+        "params": [{
+          "value": "Базовая коллекция"
+        }]
+      }, {
+        "type": "Основной цвет",
+        "params": [{
+          "value": "бледно-розовый"
+        }]
+      }, {
+        "type": "Фото",
+        "params": [{
+          "value": "https://img2.wbstatic.net/big/new/12840000/12844223-1.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/12840000/12844223-2.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/12840000/12844223-3.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/12840000/12844223-4.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/12840000/12844223-5.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/12840000/12844223-6.jpg"
+        }]
+      }],
+      "updatedAt": "0001-01-01T00:00:00Z"
+    }, {
+      "id": "282e7857-1635-4f9c-a90a-34f0f383433c",
+      "nmId": 12844224,
+      "vendorCode": "10",
+      "variations": [{
+        "id": "c4439747-7cc3-448e-ac5f-ed5fbd4579c0",
+        "chrtId": 39500079,
+        "barcodes": ["2000349624033", "4810624015542"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "M"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "44-46"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 7999
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "ff6f7c18-e808-4d96-9902-2aabb461cad4",
+        "chrtId": 39500080,
+        "barcodes": ["2000349624064", "4810624015535"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "S"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "42-44"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 7999
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "075f2360-53f5-44cd-8027-43a148d99de2",
+        "chrtId": 53536752,
+        "barcodes": ["4810624015559"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "L"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "46-48"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 7999
+          }]
+        }],
+        "errors": null
+      }],
+      "addin": [{
+        "type": "Коллекция",
+        "params": [{
+          "value": "Базовая коллекция"
+        }]
+      }, {
+        "type": "Основной цвет",
+        "params": [{
+          "value": "молочный"
+        }]
+      }, {
+        "type": "Фото",
+        "params": [{
+          "value": "https://img1.wbstatic.net/big/new/12840000/12844224-1.jpg"
+        }, {
+          "value": "https://img1.wbstatic.net/big/new/12840000/12844224-2.jpg"
+        }, {
+          "value": "https://img1.wbstatic.net/big/new/12840000/12844224-3.jpg"
+        }, {
+          "value": "https://img1.wbstatic.net/big/new/12840000/12844224-4.jpg"
+        }, {
+          "value": "https://img1.wbstatic.net/big/new/12840000/12844224-5.jpg"
+        }, {
+          "value": "https://img1.wbstatic.net/big/new/12840000/12844224-6.jpg"
+        }]
+      }],
+      "updatedAt": "0001-01-01T00:00:00Z"
+    }, {
+      "id": "4cb4da5a-45f9-4018-af45-8fea701b808a",
+      "nmId": 27559288,
+      "vendorCode": "16",
+      "variations": [{
+        "id": "a275ee8f-68f8-4434-b941-356201966c46",
+        "chrtId": 62923826,
+        "barcodes": ["4810624015603"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "L"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "46-48"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 6040
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "d5d0156d-0e08-4a34-96ab-450ba3270659",
+        "chrtId": 62923827,
+        "barcodes": ["4810624015597"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "M"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "44-46"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 6040
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "4b5768b2-0bf8-4874-b438-a1e594903ffd",
+        "chrtId": 62923828,
+        "barcodes": ["4810624015580"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "S"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "42-44"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 6040
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "4b983ea8-12bc-4223-b478-6c47c022a322",
+        "chrtId": 62923829,
+        "barcodes": ["4810624015689"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "XL"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "50-52"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 6040
+          }]
+        }],
+        "errors": null
+      }],
+      "addin": [{
+        "type": "Коллекция",
+        "params": [{
+          "value": "Базовая коллекция"
+        }]
+      }, {
+        "type": "Основной цвет",
+        "params": [{
+          "value": "болотный"
+        }]
+      }, {
+        "type": "Фото",
+        "params": [{
+          "value": "https://img1.wbstatic.net/big/new/27550000/27559288-1.jpg"
+        }, {
+          "value": "https://img1.wbstatic.net/big/new/27550000/27559288-2.jpg"
+        }, {
+          "value": "https://img1.wbstatic.net/big/new/27550000/27559288-3.jpg"
+        }, {
+          "value": "https://img1.wbstatic.net/big/new/27550000/27559288-4.jpg"
+        }, {
+          "value": "https://img1.wbstatic.net/big/new/27550000/27559288-5.jpg"
+        }, {
+          "value": "https://img1.wbstatic.net/big/new/27550000/27559288-6.jpg"
+        }, {
+          "value": "https://img1.wbstatic.net/big/new/27550000/27559288-7.jpg"
+        }]
+      }],
+      "updatedAt": "0001-01-01T00:00:00Z"
+    }, {
+      "id": "cf389f84-072e-4665-bd89-12d28edc617c",
+      "nmId": 13579701,
+      "vendorCode": "17",
+      "variations": [{
+        "id": "44fdbfad-beb8-494d-ad05-3f0d80b948d9",
+        "chrtId": 41076900,
+        "barcodes": ["2000387018184"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "L"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "46-48"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 7999
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "f4325dbd-a3c7-4c98-8c1a-fb57c84dd317",
+        "chrtId": 41076901,
+        "barcodes": ["2000387018191"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "M"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "44-46"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 7999
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "de6cf3d3-968c-409a-85e9-f9c5a784023e",
+        "chrtId": 41076902,
+        "barcodes": ["2000387018207"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "S"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "42-44"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 7999
+          }]
+        }],
+        "errors": null
+      }],
+      "addin": [{
+        "type": "Коллекция",
+        "params": [{
+          "value": "Базовая коллекция"
+        }]
+      }, {
+        "type": "Основной цвет",
+        "params": [{
+          "value": "терракотовый"
+        }]
+      }, {
+        "type": "Фото",
+        "params": [{
+          "value": "https://img2.wbstatic.net/big/new/13570000/13579701-1.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/13570000/13579701-2.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/13570000/13579701-3.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/13570000/13579701-4.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/13570000/13579701-5.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/13570000/13579701-6.jpg"
+        }]
+      }],
+      "updatedAt": "0001-01-01T00:00:00Z"
+    }, {
+      "id": "1377cae5-1b8e-47f9-8377-0bfff21cf67c",
+      "nmId": 27559289,
+      "vendorCode": "20",
+      "variations": [{
+        "id": "44845cef-d39e-4e7e-a2ce-279257db1d0c",
+        "chrtId": 62923830,
+        "barcodes": ["4810624016006"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "L"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "46-48"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 6040
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "8b7c8a16-05fb-4ed1-806e-75160fa3fe25",
+        "chrtId": 62923831,
+        "barcodes": ["4810624015993"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "M"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "44-46"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 6040
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "619cae54-5d43-4eb1-a5cf-f0c6ee771304",
+        "chrtId": 62923832,
+        "barcodes": ["4810624015986"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "S"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "42-44"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 6040
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "ff40feee-7754-4021-9b20-ae9d72d586f0",
+        "chrtId": 62923833,
+        "barcodes": ["4810624016013"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "XL"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "50-52"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 6040
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "6b3272a0-1e2c-44ce-9f77-7330046ccad5",
+        "chrtId": 62923834,
+        "barcodes": ["4810624016020"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "XXL"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "54-56"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 6040
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "0e2512a1-7383-4530-aefb-3b2e2b9c5261",
+        "chrtId": 62923835,
+        "barcodes": ["4810624016037"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "XXXL"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "58-60"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 6040
+          }]
+        }],
+        "errors": null
+      }],
+      "addin": [{
+        "type": "Коллекция",
+        "params": [{
+          "value": "Базовая коллекция"
+        }]
+      }, {
+        "type": "Основной цвет",
+        "params": [{
+          "value": "горчичный"
+        }]
+      }, {
+        "type": "Фото",
+        "params": [{
+          "value": "https://img2.wbstatic.net/big/new/27550000/27559289-1.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/27550000/27559289-2.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/27550000/27559289-3.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/27550000/27559289-4.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/27550000/27559289-5.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/27550000/27559289-6.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/27550000/27559289-7.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/27550000/27559289-8.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/27550000/27559289-9.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/27550000/27559289-10.jpg"
+        }]
+      }],
+      "updatedAt": "0001-01-01T00:00:00Z"
+    }, {
+      "id": "820750d3-4456-42e2-afad-fa06fdc8dfc1",
+      "nmId": 27605075,
+      "vendorCode": "22",
+      "variations": [{
+        "id": "7e8227b2-18c6-4937-975b-4c0a2745e81b",
+        "chrtId": 62990864,
+        "barcodes": ["4810624016068"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "L"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "46-48"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 6040
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "3a15eebe-677c-4161-b301-058d231b9470",
+        "chrtId": 62990865,
+        "barcodes": ["4810624016051"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "M"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "44-46"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 6040
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "4d8f4bed-3bc6-4a9a-836d-cc2cf20e22c8",
+        "chrtId": 62990866,
+        "barcodes": ["4810624016044"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "S"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "42-44"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 6040
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "93828538-605f-47f0-925b-8be3c8d795e3",
+        "chrtId": 62990867,
+        "barcodes": ["4810624016075"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "XL"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "50-52"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 6040
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "328f8a81-af77-426e-99f7-484f8bd66e48",
+        "chrtId": 62990868,
+        "barcodes": ["4810624016082"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "XXL"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "54-56"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 6040
+          }]
+        }],
+        "errors": null
+      }, {
+        "id": "077c6de0-652e-4b7b-a1fc-a853c234d77f",
+        "chrtId": 62990869,
+        "barcodes": ["4810624016099"],
+        "addin": [{
+          "type": "Размер",
+          "params": [{
+            "value": "XXXL"
+          }]
+        }, {
+          "type": "Рос. размер",
+          "params": [{
+            "value": "58-60"
+          }]
+        }, {
+          "type": "Розничная цена",
+          "params": [{
+            "count": 6040
+          }]
+        }],
+        "errors": null
+      }],
+      "addin": [{
+        "type": "Коллекция",
+        "params": [{
+          "value": "Базовая коллекция"
+        }]
+      }, {
+        "type": "Основной цвет",
+        "params": [{
+          "value": "бежевый"
+        }]
+      }, {
+        "type": "Доп. цвета",
+        "params": [{
+          "value": "молочный"
+        }]
+      }, {
+        "type": "Фото",
+        "params": [{
+          "value": "https://img2.wbstatic.net/big/new/27600000/27605075-1.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/27600000/27605075-2.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/27600000/27605075-3.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/27600000/27605075-4.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/27600000/27605075-5.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/27600000/27605075-6.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/27600000/27605075-7.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/27600000/27605075-8.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/27600000/27605075-9.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/27600000/27605075-10.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/27600000/27605075-11.jpg"
+        }]
+      }],
+      "updatedAt": "0001-01-01T00:00:00Z"
+    }],
+    "createdAt": "2020-06-08T14:33:49Z",
+    "updatedAt": "2021-07-19T12:38:38Z",
+    "batchID": "00000000-0000-0000-0000-000000000000"
+  }, {
+    "id": "f6333bca-ccd7-50ea-b7e4-3ec8a2f1c988",
+    "imtId": 9635708,
+    "userId": 0,
+    "supplierId": "56b967bc-72d8-42c2-965c-faa7d73aae6e",
+    "imtSupplierId": 0,
+    "object": "Подстилки противоскользящие",
+    "parent": "Дом",
+    "countryProduction": "Китай",
+    "supplierVendorCode": "",
+    "addin": [{
+      "type": "Ключевые слова",
+      "params": [{
+        "value": "подстилка под ковер"
+      }, {
+        "value": "подстилка против скольжения"
+      }, {
+        "value": "фиксатор для коврика"
+      }]
+    }, {
+      "type": "Бренд",
+      "params": [{
+        "value": "Multi-Decor"
+      }]
+    }, {
+      "type": "Наименование",
+      "params": [{
+        "value": "Подстилка против скольжения 80х150 см"
+      }]
+    }, {
+      "type": "Описание",
+      "params": [{
+        "value": "Подстилка против скольжения ковровых изделий, лежащих на полу, из различных материалов. Должна быть немного меньше, чем ковер (размер 80х150 см рекомендован для ковров 100х170 см). Достаточно просто положить на пол, а сверху ковер, ничем их вместе не скрепляя. По мере загрязнения подстилку из ПВХ можно постирать для того, чтобы возобновить ее функциональные свойства."
+      }]
+    }, {
+      "type": "Тнвэд",
+      "params": [{
+        "value": "3926909709"
+      }]
+    }, {
+      "type": "Комплектация",
+      "params": [{
+        "value": "полотна"
+      }]
+    }, {
+      "type": "Ширина упаковки",
+      "params": [{
+        "count": 10,
+        "units": "см"
+      }]
+    }, {
+      "type": "Высота упаковки",
+      "params": [{
+        "count": 20,
+        "units": "см"
+      }]
+    }, {
+      "type": "Глубина упаковки",
+      "params": [{
+        "count": 2,
+        "units": "см"
+      }]
+    }, {
+      "type": "Назначение подарка",
+      "params": [{
+        "value": "другу"
+      }, {
+        "value": "маме"
+      }, {
+        "value": "бабушке"
+      }]
+    }, {
+      "type": "Повод",
+      "params": [{
+        "value": "просто так"
+      }]
+    }, {
+      "type": "Ширина предмета",
+      "params": [{
+        "count": 80,
+        "units": "см"
+      }]
+    }, {
+      "type": "Длина предмета",
+      "params": [{
+        "count": 150,
+        "units": "см"
+      }]
+    }, {
+      "type": "Вес товара с упаковкой (г)",
+      "params": [{
+        "count": 215,
+        "units": "г"
+      }]
+    }, {
+      "type": "Вес товара без упаковки (г)",
+      "params": [{
+        "count": 215,
+        "units": "г"
+      }]
+    }, {
+      "type": "Материал изделия",
+      "params": [{
+        "value": "ПВХ"
+      }]
+    }, {
+      "type": "Высота предмета",
+      "params": [{
+        "count": 0.2,
+        "units": "см"
+      }]
+    }],
+    "nomenclatures": [{
+      "id": "d4d412f7-3f18-49f2-a798-8c4a7a47a441",
+      "nmId": 12845777,
+      "vendorCode": "2001/4",
+      "variations": [{
+        "id": "bf2e4c4f-ca87-491f-8844-45ca31f12499",
+        "chrtId": 39502996,
+        "barcodes": ["2000337314007"],
+        "addin": [{
+          "type": "Розничная цена",
+          "params": [{
+            "count": 1096
+          }]
+        }],
+        "errors": null
+      }],
+      "addin": [{
+        "type": "Коллекция",
+        "params": [{
+          "value": "Базовая коллекция"
+        }]
+      }, {
+        "type": "Фото",
+        "params": [{
+          "value": "https://img2.wbstatic.net/big/new/12840000/12845777-1.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/12840000/12845777-2.jpg"
+        }, {
+          "value": "https://img2.wbstatic.net/big/new/12840000/12845777-3.jpg"
+        }]
+      }],
+      "updatedAt": "0001-01-01T00:00:00Z"
+    }],
+    "createdAt": "2020-06-08T15:08:56Z",
+    "updatedAt": "2021-04-15T10:12:25Z",
+    "batchID": "00000000-0000-0000-0000-000000000000"
+  }],
+  "total": 1296
+}

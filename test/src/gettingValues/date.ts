@@ -1,5 +1,4 @@
 import moment from 'moment';
-import { expect } from 'chai';
 import title from '../title';
 import { defineValue } from '../../../build/helpers/defineEntry';
 
@@ -13,10 +12,10 @@ const values = {
 };
 
 function checkValue(text: string, index: number, length?: number, scale?: number): void {
-  it(title(values, index, text), () => {
+  test(title(values, index, text), () => {
     const output = defineValue(values.inputs[index], type, length, scale);
     const etalon = values.etalons[index];
-    expect(output).to.eql(etalon);
+    expect(output).toEqual(etalon);
   });
 }
 

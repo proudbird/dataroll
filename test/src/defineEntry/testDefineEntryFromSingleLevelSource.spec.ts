@@ -1,10 +1,5 @@
-import { should, expect } from 'chai';
-
-import { IValueDescriptor, AttributeValueDescriptor } from '../../../build/types';
 import defineEntry from '../../../build/helpers/defineEntry';
 import initState from '../../../build/helpers/state';
-
-import testDefineEntry from './testDefineEntry';
 
 const source = [
   { id: '1fb501b5-5e0f-41a9-9643-82cb315032b9' },
@@ -147,51 +142,52 @@ const value = {
  };
  
  const value6 = { 
-  id: '',
-  retailPrice: 0,
-  wholesalePrice: 0,
-  color: '',
+  id: source3[1].id,
+  retailPrice: source3[1].prices.retail,
+  wholesalePrice: source3[1].prices.wholesale,
+  color: source3[1].colors[1],
  };
+
 export default function() {
   
   describe('Getting entry from a singl level source:', function() {
-    it(`should init state and define entry`, () => {
+    test(`should init state and define entry`, () => {
       const state = initState(source, definition);
-      should().equal(state["#"].definition, definition);
-      should().equal(state.root, "#");
-      expect(state).to.has.property("#");
-      expect(state["#"]).to.has.property("branch");
+      expect(state["#"].definition).toEqual(definition);
+      expect(state.root).toEqual("#");
+      expect(state).toHaveProperty("#");
+      expect(state["#"]).toHaveProperty("branch");
       let result = defineEntry(state, {});
-      expect(result).to.has.property("done");
-      expect(result).to.deep.equals({ done: false, value: { id: source[0].id }})
+      expect(result).toHaveProperty("done");
+      expect(result).toEqual({ done: false, value: { id: source[0].id }})
       result = defineEntry(state, {});
-      expect(result).to.deep.equals({ done: false, value: { id: source[1].id }})  
+      expect(result).toEqual({ done: false, value: { id: source[1].id }})  
     });
   });
 
   describe('Getting entry from a nested source:', function() {
-    it(`should init state and define entry`, () => {
+    test(`should init state and define entry`, () => {
       const state = initState(source2, definition2);
       let result = defineEntry(state, {});
-      expect(result).to.has.property("done");
-      expect(result).to.deep.equals({ done: false, value });
+      expect(result).toHaveProperty("done");
+      expect(result).toEqual({ done: false, value });
       result = defineEntry(state, {});
     });
   });
 
   describe('Getting entry from a nested source with *:', function() {
-    it(`should init state and define entry`, () => {
+    test(`should init state and define entry`, () => {
       const state = initState(source3, definition3);
       let result = defineEntry(state, {});
-      expect(result).to.has.property("done");
-      expect(result).to.deep.equals({ done: false, value: value3 });
+      expect(result).toHaveProperty("done");
+      expect(result).toEqual({ done: false, value: value3 });
       result = defineEntry(state, result.value);
-      expect(result).to.deep.equals({ done: false, value: value4 });
+      expect(result).toEqual({ done: false, value: value4 });
       result = defineEntry(state, result.value);
-      expect(result).to.deep.equals({ done: false, value: value5 });
+      expect(result).toEqual({ done: false, value: value5 });
       result = defineEntry(state, result.value);
       result = defineEntry(state, result.value);
-      expect(result).to.deep.equals({ done: true, value: value6 });
+      expect(result).toEqual({ done: true, value: undefined });
     });
   });
 
@@ -205,11 +201,11 @@ export default function() {
    };
 
   describe('Getting entry from a nested source with * and handler:', function() {
-    it(`should init state and define entry`, () => {
+    test(`should init state and define entry`, () => {
       const state = initState(source3, definition4);
       let result = defineEntry(state, {});
-      expect(result).to.has.property("done");
-      expect(result).to.deep.equals({ done: false, value: value7 });
+      expect(result).toHaveProperty("done");
+      expect(result).toEqual({ done: false, value: value7 });
     });
   });
 }

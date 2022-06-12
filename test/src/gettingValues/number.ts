@@ -1,4 +1,3 @@
-import { should } from 'chai';
 import checkValue from './checkValue';
 import { defineValue } from '../../../build/helpers/defineEntry';
 
@@ -31,8 +30,8 @@ export default function() {
     checkValue(values, type, 'hould to be interpreted as', 15);
     checkValue(values, type, 'should be transformed to', 16);
 
-    it(`getting number value with length '0' should throw an error`, () => {
-      should().throw(() => { defineValue(99, type, 0) });
+    test(`getting number value with length '0' should throw an error`, () => {
+      expect(() => { defineValue(99, type, 0) }).toThrowError();
     });
   });
 }

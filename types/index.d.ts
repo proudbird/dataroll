@@ -56,7 +56,7 @@ declare class DataSourceColumnDescriptor {
     constructor(name: string, type: AttributeType, length?: number, scale?: number);
 }
 
-declare namespace DataRoll {
+declare namespace Dataroll {
 
     interface SourceDefinition {
         attributes: Array<AttributeDefinition>;
