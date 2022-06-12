@@ -7,7 +7,7 @@ import getNumberValue from '../valueGeters/number';
 import getBooleanValue from '../valueGeters/boolean';
 import getDateValue from '../valueGeters/date';
 
-export default function defineEntry(state: any, entry: any):  { done: boolean, value: any } {
+export default function defineEntry(state: any, entry: any):  { done: boolean, value?: any } {
 
   const current = state[state.root];
   const { done, value } = current.branch.next();
@@ -21,13 +21,18 @@ export default function defineEntry(state: any, entry: any):  { done: boolean, v
   }
 
   if(done && state.root === '#') {
-    return { done: true, value: entry };
+    // it's the last item of the first level of the collection
+    return { done: true };
+  // } else if(done) {
+  //   state.root = current.parent;
+  //   return defineEntry(state, entry);
+  // } 
   } else if(done && !value) {
     state.root = current.parent;
     return defineEntry(state, entry);
   } else if(done) {
     state.root = current.parent;
-    return { done: false, value: entry };
+    return { done: false, value: { ...entry } };
   }
 
   if(current.definition.subset) {
@@ -37,7 +42,7 @@ export default function defineEntry(state: any, entry: any):  { done: boolean, v
     state.root = nextRoot;
     return defineEntry(state, entry);
   } else {
-    return { done: false, value: entry };
+    return { done: false, value: { ...entry } };
   }
 }
 

@@ -28,13 +28,25 @@ export default class DataRoll {
 
     const next = () => {
       const result = defineEntry(state, entry);
-      this.#entries.push(result.value);
-      return result;
+      if(this.validator && !result.done) {
+        if(this.validator(result.value)) {
+          this.#entries.push(result.value);
+          return result;
+        } else {
+          return next();
+        }
+      } else {
+        if(!result.done) {
+          this.#entries.push(result.value);
+        }
+        return result;
+      }
     }
 
     const nextFromEntries = () => {
-      const done = (index = this.#entries.length - 1);
-      return { done: done, value: this.#entries[index]};
+      const done  = (index = this.#entries.length - 1);
+      const value = done ? undefined : this.#entries[index];
+      return { done, value };
     }
 
     return this.#entries.length ? { next: nextFromEntries } : { next };
@@ -42,13 +54,13 @@ export default class DataRoll {
 
   get entries() {
 
-    populate(this, this.#entries);
+    this.#entries = populate(this, this.#entries);
     return this.#entries;
   }
 
   get length() {
 
-    populate(this, this.#entries);
+    this.#entries = populate(this, this.#entries);
     return this.#entries.length;
   }
 
