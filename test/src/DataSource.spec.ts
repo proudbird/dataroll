@@ -1,11 +1,11 @@
 import { readFileSync } from 'fs';
 import { join } from 'path';
 import moment from 'moment';
+import _ from 'lodash';
 import gettingValues from './gettingValues/gettingValues';
 import descriptValues from './descriptValues/descriptValues';
 import testDefineEntryFromSingleLevelSource from './defineEntry/testDefineEntryFromSingleLevelSource.spec';
 import DataRoll from '../../build/dataroll';
-import _ from 'lodash';
 
 describe('xDataSource testings', () => {
   gettingValues();
