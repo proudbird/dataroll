@@ -1,5 +1,5 @@
 import getProperty from 'lodash.get';
-import isFunction from 'lodash.isFunction';
+import isFunction from 'lodash.isfunction';
 import getStringValue from '../valueGeters/string';
 
 import { AttributeType, AttributeValueDescriptor, IValueDescriptor, ValueType } from "../types";
