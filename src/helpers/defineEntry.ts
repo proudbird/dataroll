@@ -15,7 +15,7 @@ export default function defineEntry(state: any, entry: any):  { done: boolean, v
   if(value) {
     for(let attribute of current.definition.attributes) {
       for(let key in attribute) {
-        entry[key] = getPropertyValue(value, attribute[key]);
+        entry[key] = getPropertyValue(value, attribute[key], entry);
       }
     }
   }
@@ -46,14 +46,19 @@ export default function defineEntry(state: any, entry: any):  { done: boolean, v
   }
 }
 
-export function getPropertyValue(node: any, descriptor: AttributeValueDescriptor): ValueType {
+export function getPropertyValue(node: any, descriptor: AttributeValueDescriptor, entry: any): ValueType {
 
   let result = undefined;
   const { property, type, length, scale, handler, args } = descriptValue(descriptor);
   //@ts-ignore
   const value = getProperty(node, property);
   if(handler) {
-    result = defineValue(handler(value, ...args), type, length, scale);
+    result = defineValue(handler(value, entry, ...args), type, length, scale);
+    if(property === '*') {
+      result = defineValue(handler(node, entry, ...args), type, length, scale);
+    } else {
+    result = defineValue(handler(value, entry, ...args), type, length, scale);
+    }
   } else if(property === '*') {
     result = defineValue(node, type, length, scale);
   } else {

@@ -1,6 +1,6 @@
 {
   "name": "dataroll",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A very usefull tool for converting complex nested sets of data to a plain array",
   "main": "build/dataroll.js",
   "scripts": {
