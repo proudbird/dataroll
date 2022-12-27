@@ -53,11 +53,10 @@ export function getPropertyValue(node: any, descriptor: AttributeValueDescriptor
   //@ts-ignore
   const value = getProperty(node, property);
   if(handler) {
-    result = defineValue(handler(value, entry, ...args), type, length, scale);
     if(property === '*') {
       result = defineValue(handler(node, entry, ...args), type, length, scale);
     } else {
-    result = defineValue(handler(value, entry, ...args), type, length, scale);
+      result = defineValue(handler(value, entry, ...args), type, length, scale);
     }
   } else if(property === '*') {
     result = defineValue(node, type, length, scale);
